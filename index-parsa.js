@@ -1,15 +1,15 @@
-// object literal
-let circle = {
-  // properties
-  radius: 1,
-  location: {
-    x: 1,
-    y: 1,
-  },
-  // methods
-  draw: function () {
-    console.log("draw circle");
-  },
-};
-
-circle.draw()
+// factory function
+function createCircle(radius) {
+  return {
+    // object literal
+    // properties
+    radius,
+    
+    // methods
+    draw: function () {
+      console.log("draw circle with radius of " + radius);
+    },
+  };
+}
+const circle = createCircle(1)
+circle.draw();
