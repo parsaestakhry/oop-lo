@@ -12,4 +12,16 @@ function createCircle(radius) {
   };
 }
 const circle = createCircle(1)
-circle.draw();
+
+// constructor function
+
+function Circle(radius){
+    this.radius = radius
+    this.draw = function (){
+        console.log('draw with radius of ' + radius)
+    }
+}
+
+const circle_new = new Circle(2)
+
+circle_new.draw()
