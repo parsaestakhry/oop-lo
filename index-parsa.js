@@ -22,6 +22,11 @@ function Circle(radius){
     }
 }
 
+// they both are the same
+Circle.call(window, 2)
+// for passing array
+Circle.apply({}, [1,2,3])
 const circle_new = new Circle(2)
 
-circle_new.draw()
+
+// functions are objects 
