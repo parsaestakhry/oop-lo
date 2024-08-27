@@ -28,6 +28,8 @@ function Circle(radius) {
   }
 }
 
+
+
 // they both are the same
 Circle.call(window, 2);
 // for passing array

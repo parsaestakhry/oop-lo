@@ -32,3 +32,5 @@ function StopWatch() {
     return duration;
   };
 }
+
+
